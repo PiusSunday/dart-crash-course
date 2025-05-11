@@ -8,7 +8,7 @@ Dart is a programming language designed for building web, server, and mobile app
 
 - In essence, it is a language used to make **multi-platform** applications.
 
-[Dart to JavaScript](images/image-1.png)
+[Dart to JavaScript](assets/images/image-1.png)
 
 - Dart is a **statically typed language**, meaning that every variable must have it's own type. These variable types are known at compile time. This allows for better performance and error checking compared to dynamically typed languages like JavaScript.
 
@@ -31,21 +31,24 @@ a = "Hello"; // This will throw an error
   - Functions
   - Collections (Lists, Sets, Maps)
   - Exception Handling
+  - Null Safety and Sound Null Safety
 
 - Object-Oriented Programming:
   - Classes and Objects
+  - Constructors and Factories
   - Inheritance
   - Polymorphism
   - Encapsulation
   - Abstract Classes
   - Interfaces
+
+- Intermediate Level Dart Core
   - Mixins
   - Generics
   - Extension Methods
-  - Null Safety
-  - Asynchronous Programming
-  - Futures & HTTP Requests
-  - Streams
+  - Futures & Asynchronous (Async) Programming
+  - HTTP Requests
+  - Streams and Transformations
   - Isolates
   - Dart Libraries
   - Dart Packages
