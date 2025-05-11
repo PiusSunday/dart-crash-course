@@ -34,7 +34,7 @@ void main() {
   // Check if an element exists in the list
   bool hasCherry = fruits.contains("Cherry");
   print("Contains Cherry: $hasCherry");
-  
+
   // Get the length of the list
   int fruitCount = fruits.length;
   print("Number of fruits: $fruitCount");
@@ -48,15 +48,19 @@ void main() {
   print("Sublist: $sublist");
 
   // Use the where method to filter the list
-  List<String> filteredFruits = fruits.where((fruit) => fruit.startsWith("A")).toList();
+  List<String> filteredFruits =
+      fruits.where((fruit) => fruit.startsWith("A")).toList();
   print("Filtered fruits (starting with A): $filteredFruits");
 
   // Use the map method to transform the list
-  List<String> upperCaseFruits = fruits.map((fruit) => fruit.toUpperCase()).toList();
+  List<String> upperCaseFruits =
+      fruits.map((fruit) => fruit.toUpperCase()).toList();
   print("Uppercase fruits: $upperCaseFruits");
 
   // Use the reduce method to combine the list
-  String combinedFruits = fruits.reduce((value, element) => value + ", " + element);
+  String combinedFruits = fruits.reduce(
+    (value, element) => value + ", " + element,
+  );
   print("Combined fruits: $combinedFruits");
 
   // Sort the list
@@ -106,11 +110,7 @@ void main() {
   // *******************************************
 
   // 3. Map
-  Map<String, int> fruitPrices = {
-    "Apple": 3,
-    "Banana": 1,
-    "Cherry": 2,
-  };
+  Map<String, int> fruitPrices = {"Apple": 3, "Banana": 1, "Cherry": 2};
   print("Fruit Prices: $fruitPrices");
 
   // Add a key-value pair to the map
@@ -124,6 +124,10 @@ void main() {
   // Access a value by key
   int applePrice = fruitPrices["Apple"]!;
   print("Price of Apple: $applePrice");
+
+  // 
+  print(fruitPrices.keys);
+  print(fruitPrices.values);
 
   // Iterate over the map
   print("Iterating over fruit prices:");
@@ -142,7 +146,7 @@ void main() {
   // Get the length of the map
   int fruitPriceCount = fruitPrices.length;
   print("Number of fruit prices: $fruitPriceCount");
- 
+
   // Clear the map
   fruitPrices.clear();
   print("Cleared fruit prices: $fruitPrices");
